@@ -21,3 +21,7 @@ class TestEstadistica(unittest.TestCase):
     def test_desviacion_varios_elementos(self):
         resultado = self.estadistica.calcular_desviacion_estandar([1, 2, 3])
         self.assertAlmostEqual(resultado, 0.81649658, places=4)
+
+    def test_calcular_media(self):
+        media = self.estadistica.calcular_media([2, 4])
+        self.assertEqual(media, 3.0)

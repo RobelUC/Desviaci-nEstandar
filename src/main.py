@@ -27,12 +27,14 @@ def main():
 
     if numeros:
         estadistica = Estadistica()
+        media = estadistica.calcular_media(numeros)
         resultado = estadistica.calcular_desviacion_estandar(numeros)
         
         print("\n----------------RESULTADOS----------------")
         print(f"Números ingresados: {numeros}")
         print(f"Cantidad de datos (N): {len(numeros)}")
         print(f"Desviación Estándar: {resultado:.4f}")
+        print(f"Media (Promedio): {media:.4f}")
     else:
         print("No ingresaste ningún número.")
 
